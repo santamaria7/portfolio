@@ -25,6 +25,12 @@ main {
     gap: 16px;
 }
 
+img {
+    display: block;
+    margin: var(--padding);
+    max-width: 300px;
+}
+
 @media screen and (max-width: 767px) {
     main {
         flex-direction: column;
