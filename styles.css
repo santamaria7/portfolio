@@ -1,1 +1,32 @@
+:root {
+    --padding: 16px;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,
+main,
+footer {
+    padding: var(--padding);
+}
+
+footer {
+    text-align: center;
+}
+
+main {
+    margin: var(--padding) 0;
+    display: flex;
+    gap: 16px;
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        flex-direction: column;
+    }
+}
