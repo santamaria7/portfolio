@@ -2,33 +2,50 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Floral Portfolio</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <header>
-     <p>My portfolio</p>
+      <p>Bloom & Grace Florals</p>
     </header>
     <main>
-      <section>
-        <h1>My Portfolio</h1>
+      <section class="about">
+        <h1>Florist Portfolio</h1>
         <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
-          and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          I create thoughtful floral arrangements for weddings, celebrations, gifts,
+          and everyday moments that deserve a little beauty. My work blends seasonal
+          flowers, soft color palettes, and natural textures to make each bouquet feel
+          personal, fresh, and full of life.
         </p>
-        <img src="https://picsum.photos/200/300" alt="sample image" />
+        <p>Fill out the form below to get in touch!</p>
       </section>
-      <aside>
-        <ul>
-          <li>Coding</li>
-          <li>Skating</li>
-          <li>Dead lift</li>
-        </ul>
-      </aside>
+
+      <section class="gallery" aria-label="Florist work samples">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/A_Bouquet_of_flowers.jpg?width=600" alt="Decorated bouquet with red and pink roses" />
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flower_Bouquet_(40780).jpg?width=600" alt="Mixed flower bouquet wrapped for gifting" />
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flower_bouquet20091225.JPG?width=600" alt="Bright flower bouquet in warm colors" />
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bouquet_of_flowers_(1).jpg?width=600" alt="Colorful arranged bouquet with greenery" />
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flowers_and_bouquet.jpg?width=600" alt="Fresh flowers arranged as a bouquet" />
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flower_Bouquet_(52699789055).jpg?width=600" alt="Valentine bouquet with yellow daisies and roses" />
+      </section>
+
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+          <p id="form-message" class="form-message" role="status"></p>
+        </form>
+      </section>
     </main>
     <footer>
       <p>Copyright <span id="year"></span></p>
